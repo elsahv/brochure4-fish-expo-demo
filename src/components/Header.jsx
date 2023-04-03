@@ -1,22 +1,7 @@
-import styled from "styled-components";
-
-const Nav = styled.nav`
-  height: 60px;
-  font-size: 20px;
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-  z-index: 100;
-  position: fixed;
-  width: 100%;
-`;
+import React from "react";
 
 const Header = () => {
-  return (
-    <Nav>
-      <h1>Hovey Roofing</h1>
-    </Nav>
-  );
+  return <div className="text-3xl font-bold underline">Header</div>;
 };
 
 export default Header;
