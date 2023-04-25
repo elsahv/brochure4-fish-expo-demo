@@ -1,22 +1,27 @@
 import React from "react";
-import About from "./components/sections/About";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Hero from "./components/sections/Hero";
-import RoofStyles from "./components/sections/RoofStyles";
-import Contact from "./components/sections/Contact";
 
-const Home = () => {
+//* PAGES
+import Home from "./pages/home";
+import About from "./pages/about";
+import RoofStyles from "./pages/roof-styles";
+import Contact from "./pages/contact";
+
+const App = () => {
   return (
-    <div>
+    <BrowserRouter>
       <Header />
-      <Hero />
-      <About />
-      <RoofStyles />
-      <Contact />
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/roof-styles" element={<RoofStyles />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
       <Footer />
-    </div>
+    </BrowserRouter>
   );
 };
 
-export default Home;
+export default App;

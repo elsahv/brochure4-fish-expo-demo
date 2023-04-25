@@ -1,16 +1,22 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <nav className="flex justify-between p-4 ">
-      <div className="font-bold">HoveyRoofing</div>
+      <Link to="/" className="font-bold">
+        HoveyRoofing
+      </Link>
       <div className="flex">
-        <div className="px-1">about</div>
-        <div className="px-1">roof styles</div>
+        <Link to="/about" className="px-1">
+          about
+        </Link>
+        <Link to="roof-styles" className="px-1">
+          roof styles
+        </Link>
       </div>
-      <div>
-        <button className="p-2 bg-black text-white">Contact Us</button>
-      </div>
+      <button className="p-2 bg-black text-white">
+        <Link to="/contact">Contact Us</Link>
+      </button>
     </nav>
   );
 };

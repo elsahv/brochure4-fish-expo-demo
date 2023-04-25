@@ -1,9 +1,9 @@
 import React from "react";
-import Gallery1 from "../../images/gallery1.jpg";
-import Gallery2 from "../../images/gallery2.jpg";
-import Gallery3 from "../../images/gallery3.jpg";
-import Gallery4 from "../../images/gallery4.jpg";
-import Gallery5 from "../../images/gallery5.jpg";
+import Gallery1 from "../images/gallery1.jpg";
+import Gallery2 from "../images/gallery2.jpg";
+import Gallery3 from "../images/gallery3.jpg";
+import Gallery4 from "../images/gallery4.jpg";
+import Gallery5 from "../images/gallery5.jpg";
 
 const RoofStyles = () => {
   return (
