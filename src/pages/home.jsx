@@ -7,7 +7,7 @@ const HomePage = () => {
   return (
     <div>
       <Hero />
-      <div className="2xl:pt-[900px] sm:pt-[1300px]">
+      <div className="2xl:pt-[900px] md:pt-[1200px] sm:pt-[1600px]">
         <AboutContent />
         <Gallery />
         <ContactInfo />

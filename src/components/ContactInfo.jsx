@@ -3,7 +3,7 @@ import ContactImg from "../images/contactImg.jpg";
 
 const Contact = () => {
   return (
-    <section className="h-screen flex justify-center items-center">
+    <section className="h-screen md:flex flex-col justify-center items-center">
       <div className="mr-5 p-2">
         <ul className="text-2xl">
           <li className="font-bold text-3xl py-5">Contact HoveyRoofing</li>
