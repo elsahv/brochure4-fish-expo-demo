@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <nav className="flex justify-between p-4 ">
+    <nav className="z-50 flex justify-between p-4 relative top-0 w-full text-white _textShadow text-lg">
       <Link to="/" className="font-bold">
         HoveyRoofing
       </Link>
@@ -14,7 +14,7 @@ const Header = () => {
           roof styles
         </Link>
       </div>
-      <button className="p-2 bg-black text-white">
+      <button className="p-2 text-white bg-black">
         <Link to="/contact">Contact Us</Link>
       </button>
     </nav>

@@ -1,9 +1,9 @@
-import Roofs from "../components/Roofs";
+import Gallery from "../components/Gallery";
 
 const RoofStyles = () => {
   return (
     <div>
-      <Roofs />
+      <Gallery />
     </div>
   );
 };
