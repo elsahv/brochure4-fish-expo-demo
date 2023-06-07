@@ -5,13 +5,11 @@ import ContactInfo from "../components/ContactInfo";
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="bg-parchment">
       <Hero />
-      <div className="2xl:pt-[900px] md:pt-[1200px] sm:pt-[1600px]">
-        <AboutContent />
-        <Gallery />
-        <ContactInfo />
-      </div>
+      <AboutContent />
+      <Gallery />
+      <ContactInfo />
     </div>
   );
 };
