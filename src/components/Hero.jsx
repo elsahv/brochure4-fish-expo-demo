@@ -8,15 +8,15 @@ const Hero = () => {
       transition={{ delay: 0.1, duration: 0.5 }}
       whileInView="show"
     >
-      <div className="relative flex items-center z-20 w-full h-screen">
-        <div className="_textShadowBold text-white flex items-center flex-col">
+      <div className="flex items-center w-full h-screen">
+        <div className=" _textShadowBold text-white flex items-center flex-col">
           <h2 className="md:text-6xl text-5xl my-4">HoveyRoofing Company</h2>
           <span className="md:text-3xl text-lg ml-[75px]">
             Serving Redlands and surrounding areas since 1988
           </span>
         </div>
       </div>
-      <div className="absolute top-0 w-full h-screen flex justify-center items-center">
+      <div className="absolute top-0 w-full  flex justify-center items-center">
         <img
           src={HeroImg}
           alt=""

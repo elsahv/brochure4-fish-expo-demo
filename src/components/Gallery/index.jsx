@@ -6,12 +6,12 @@ const RoofStyles = () => {
   return (
     <motion.section
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 0.1, duration: 0.5 }}
-      whileInView="show"
-      className="bg-onyx"
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 2.5 }}
+      className=""
+      id="roof-styles"
     >
-      <h2 className="_textShadow text-parchment flex justify-center pt-[70px] text-2xl font-bold">
+      <h2 className="text-onyx flex justify-center text-2xl font-bold px-5">
         We offer many styles for the roof that you need!
       </h2>
       <div className="flex justify-center">

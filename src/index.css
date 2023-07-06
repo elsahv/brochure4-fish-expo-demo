@@ -10,10 +10,9 @@
   /* background: #faedcd; */  
 }
 
-/* section { */
-  /* border: solid 1px #000; */
-/* } */
-
+html {
+  scroll-behavior: smooth;
+}
 .universal-img{
   border: solid 1px #000;
 }
@@ -25,3 +24,25 @@
 ._textShadowBold {
   text-shadow: 3px 3px 4px #000;
 }
+ 
+
+  .dropdown {
+  /* background: #fff; */
+  }
+
+  .dropdown .nav-menu {
+   background: #fff;
+    color: #000;
+    border-left: solid 2px #000;
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: 850ms;
+  }
+
+  .dropdown .nav-menu.active {
+    right: 0;
+    transition: 350ms;
+  }

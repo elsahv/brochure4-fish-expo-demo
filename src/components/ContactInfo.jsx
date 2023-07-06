@@ -6,25 +6,48 @@ const Contact = () => {
   return (
     <motion.section
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ delay: 0.1, duration: 0.5 }}
-      whileInView="show"
-      className="bg-parchment h-screen flex 2xl:flex-row flex-col justify-center
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 2.5 }}
+      className=" h-screen flex 2xl:flex-row flex-col justify-center
       items-center"
     >
-      <div className="_textShadow text-parchment bg-onyx mr-5 md:p-5 p-1">
-        <ul className="md:text-4xl text-2xl">
-          <li className="font-bold md:text-5xl text-3xl pb-5">
+      <motion.div
+        initial={{
+          x: -200,
+          opacity: 0,
+        }}
+        transition={{
+          duration: 1.5,
+        }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        className="mr-5 md:p-5 p-1"
+      >
+        <ul id="contact" className="text-onyx md:text-4xl text-2xl">
+          <li className="text-black font-bold md:text-5xl text-3xl pb-5">
             Contact HoveyRoofing
           </li>
-          <li>Office: 909-798-0807</li>
-          <li>Cell: 951-218-6090</li>
-          <li>Email: hoveyroofing@aol.com</li>
+          <li className="">Office: 909-798-0807</li>
+          <li className="">Cell: 951-218-6090</li>
+          <li className="">Email: hoveyroofing@aol.com</li>
         </ul>
-      </div>
-      <div className="my-10 drop-shadow-lg">
-        <img src={ContactImg} alt="" className="universal-img" />
-      </div>
+      </motion.div>
+      <motion.div className="my-10 drop-shadow-lg p-5">
+        <motion.img
+          initial={{
+            x: 400,
+            opacity: 0,
+          }}
+          transition={{
+            duration: 1.5,
+          }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          src={ContactImg}
+          alt=""
+          className="universal-img "
+        />
+      </motion.div>
     </motion.section>
   );
 };

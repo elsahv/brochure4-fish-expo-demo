@@ -1,23 +1,26 @@
-import { Link } from "react-router-dom";
+import Hamburger from "./Hamburger";
 
 const Header = () => {
   return (
-    <nav className="z-50 flex justify-between p-4 relative top-0 w-full text-white _textShadow text-lg">
-      <Link to="/" className="font-bold">
-        HoveyRoofing
-      </Link>
-      <div className="flex">
-        <Link to="/about" className="px-1">
-          about
-        </Link>
-        <Link to="roof-styles" className="px-1">
-          roof styles
-        </Link>
-      </div>
-      <button className="p-2 text-white bg-black">
-        <Link to="/contact">Contact Us</Link>
-      </button>
-    </nav>
+    <header>
+      <nav className="z-50 flex justify-between p-4 relative top-0 w-full text-white _textShadow text-2xl">
+        <a href="/" className="font-bold">
+          HoveyRoofing
+        </a>
+        <div className="flex">
+          <a href="/#about" className="px-1 md:block hidden">
+            about
+          </a>
+          <a href="/#roof-styles" className="px-1 md:block hidden">
+            roof styles
+          </a>
+        </div>
+        <button className="py-2 px-5 text-white bg-black md:block hidden">
+          <a href="/#contact">Contact Us</a>
+        </button>
+        <Hamburger />
+      </nav>
+    </header>
   );
 };
 
