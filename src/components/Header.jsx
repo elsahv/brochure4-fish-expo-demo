@@ -2,8 +2,8 @@ import Hamburger from "./Hamburger";
 
 const Header = () => {
   return (
-    <header>
-      <nav className="z-50 flex justify-between p-4 relative top-0 w-full text-white _textShadow text-2xl">
+    <header className="relative top-0 z-50">
+      <nav className="flex justify-between p-4 w-full text-white _textShadow text-2xl">
         <a href="/" className="font-bold">
           HoveyRoofing
         </a>

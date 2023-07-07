@@ -9,14 +9,14 @@ const Hero = () => {
       whileInView="show"
     >
       <div className="flex items-center w-full h-screen">
-        <div className=" _textShadowBold text-white flex items-center flex-col">
+        <div className="absolute z-50  _textShadowBold text-white flex items-center flex-col">
           <h2 className="md:text-6xl text-5xl my-4">HoveyRoofing Company</h2>
           <span className="md:text-3xl text-lg ml-[75px]">
             Serving Redlands and surrounding areas since 1988
           </span>
         </div>
       </div>
-      <div className="absolute top-0 w-full  flex justify-center items-center">
+      <div className="w-full  flex justify-center items-center">
         <img
           src={HeroImg}
           alt=""

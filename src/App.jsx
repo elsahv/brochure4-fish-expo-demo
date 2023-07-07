@@ -8,14 +8,14 @@ import Contact from "./components/ContactInfo";
 
 const App = () => {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Header />
       <Hero />
       <About />
       <Gallery />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 };
 
