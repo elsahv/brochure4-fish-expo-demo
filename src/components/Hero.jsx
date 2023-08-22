@@ -1,4 +1,4 @@
-import HeroImg from "../images/sliderImg1.jpg";
+import HeroImg from "../images/hero-fish.jpg";
 import { motion } from "framer-motion";
 const Hero = () => {
   return (
@@ -9,10 +9,10 @@ const Hero = () => {
       whileInView="show"
     >
       <div className="flex items-center w-full h-screen">
-        <div className="absolute z-50  _textShadowBold text-white flex items-center flex-col">
-          <h2 className="md:text-6xl text-5xl my-4">HoveyRoofing Company</h2>
+        <div className="absolute z-50 _textShadowBold text-white flex items-center flex-col">
+          <h2 className="md:text-6xl text-5xl my-4">Fish Expo</h2>
           <span className="md:text-3xl text-lg ml-[75px]">
-            Serving Redlands and surrounding areas since 1988
+            Celebrating aquatic life since 1998
           </span>
         </div>
       </div>

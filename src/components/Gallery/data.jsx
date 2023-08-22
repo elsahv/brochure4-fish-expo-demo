@@ -1,11 +1,12 @@
-import Gallery1 from "../../images/gallery1.jpg";
-import Gallery2 from "../../images/gallery2.jpg";
-import Gallery3 from "../../images/gallery3.jpg";
-import Gallery4 from "../../images/gallery4.jpg";
-import Gallery5 from "../../images/gallery5.jpg";
-import Gallery6 from "../../images/sliderImg2.jpg";
-import Gallery7 from "../../images/sliderImg3.jpg";
-import Gallery8 from "../../images/sliderImg4.jpg";
+// import Gallery1 from "../../images/gallery1.jpg";
+import Gallery1 from "../../assets/jellyfish.jpg";
+import Gallery2 from "../../assets/school.jpg";
+import Gallery3 from "../../assets/yellow-fish.jpg";
+import Gallery4 from "../../assets/urchin.jpg";
+import Gallery5 from "../../assets/weird-looking-fish.jpg";
+import Gallery6 from "../../assets/starfish.jpg";
+import Gallery7 from "../../assets/seals.jpg";
+import Gallery8 from "../../assets/turtle.jpg";
 
 const content = [
   {
@@ -14,7 +15,7 @@ const content = [
   },
   {
     id: 2,
-    image: Gallery2,
+    image: Gallery7,
   },
   {
     id: 3,
@@ -34,7 +35,7 @@ const content = [
   },
   {
     id: 7,
-    image: Gallery7,
+    image: Gallery2,
   },
   {
     id: 8,

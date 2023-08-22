@@ -1,5 +1,5 @@
 import React from "react";
-import ContactImg from "../images/contactImg.jpg";
+import ContactImg from "../assets/shark.jpg";
 import { motion } from "framer-motion";
 
 const Contact = () => {
@@ -23,13 +23,15 @@ const Contact = () => {
         viewport={{ once: true }}
         className="mr-5 md:p-5 p-1"
       >
-        <ul id="contact" className="text-onyx md:text-4xl text-2xl">
+        <ul id="contact" className="text-onyx text-2xl">
           <li className="text-black font-bold md:text-5xl text-3xl pb-5">
-            Contact HoveyRoofing
+            Contact Fish Expo
           </li>
-          <li className="">Office: 909-798-0807</li>
-          <li className="">Cell: 951-218-6090</li>
-          <li className="">Email: hoveyroofing@aol.com</li>
+          {/* <li className="">instagram</li>
+          <li className="">facebook</li> */}
+          <li className="mb-2">Email: fishexpoexample@gmail.com</li>
+          <li className="mb-2">Address: Madeup Site 3030, City, State</li>
+          <li className="mb-2">Phone: 1-800-dial-a-fish</li>
         </ul>
       </motion.div>
       <motion.div className="my-10 drop-shadow-lg p-5">
@@ -45,7 +47,7 @@ const Contact = () => {
           viewport={{ once: true }}
           src={ContactImg}
           alt=""
-          className="universal-img "
+          className="universal-img h-[700px] w-[500px]"
         />
       </motion.div>
     </motion.section>
